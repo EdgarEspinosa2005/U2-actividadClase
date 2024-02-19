@@ -1,28 +1,18 @@
 #include <stdio.h>
 
-int main(){
-    float x, y, prom; // Declarar las variables de tipo real
+int main() {
+    int num;
 
-    printf("Programa que calcula la media de dos numeros \n\n");
-    
+    printf("Introduzca un numero entre 1 y 100: ");
+    scanf("%d", &num);
 
-    // Leer x
-    printf("Introduzca el primer numero: ");
-    // Solicitar el valor y asignar a la variable x
-    scan("%f", %x);
-
-    // Leer y
-    printf("\nIntroduzca el segundo numero: ");
-    // Solicitar el valor y asignar a la variable y
-     scan("%f", %y);
- 
-    // Calcular la media
-    prom = (  x + y )/ 2;
-
-	// Imprimir el resultado en pantalla
-
-     printf("El resultado de la media de %f y %f es %f\n: ",x, y, prom);
-   
-
+    if (num >= 1 && num <= 100){
+        if (num % 3 == 0 && num % 5 == 0){
+            printf("FizzBuzz\n");
+        }else if(num % 3 == 0){
+            printf("Fizz\n");
+        }else if(num % 5 == 0){
+            printf("Buzz\n");
+        }
     return 0;
 }
